@@ -162,7 +162,39 @@ img {
 }
 
 /*=============== HOME ===============*/
+.home {
+	position: relative;
+	height: 100vh;
+}
 
+.home__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.home__boxes {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: 1fr;
+}
+
+.home__box {
+	background: linear-gradient(-90deg, hsla(0, 0%, 0%, .4) 0%, 
+										hsla(0, 0%, 0%, .4) 17%, 
+										hsla(0, 0%, 0%, .1) 100%);
+	box-shadow: inset 0 2px 4px hsla(0, 0%, 100%, .15);
+	backdrop-filter: blur(50px);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices <> */
